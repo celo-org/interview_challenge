@@ -10,7 +10,7 @@ The Ethereum ecosystem has various testnets on which users and developers can te
 
 This is a simple express app that queries [blockscout.com](https://blockscout.com/) for the balance of a supplied address on a configured ETH network. It caches requests to Blockscout via Redis. To test the app, you'll likely want to create a wallet and then give it a few ETH at the testnet's faucet.
 
-You can see the source code under the `client` directory. We also supplied a simple-to-run docker image under `interview-infra-client`. The app can be configured via the following `ENV` variables:
+You can see the source code under the `client` directory. We also supplied a simple-to-run docker image under `nambrot/interview-infra-client`. The app can be configured via the following `ENV` variables:
 
 - `REDIS`, defaults to `localhost:6379` and should allow the app to connect to a redis instance where it will cache requests
 - `CACHE_EXPIRATION`, defaults to `30` and sets the expiration time of a request in seconds
